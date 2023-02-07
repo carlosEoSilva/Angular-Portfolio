@@ -1,0 +1,18 @@
+<div class="certContainer">
+
+<ng-container *ngFor="let i of items;" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+
+  <div class="wrapper">
+    <div class="parent" onclick="">
+      <div class="child bg-one" style="background-image: url({{i}});">
+      </div>
+    </div>
+  </div>
+
+</ng-container>
+
+    <button class="button-3" (click)="loadService.goToPage('/home')">Voltar</button>
+    
+</div>
+

@@ -1,0 +1,83 @@
+h1{
+	text-align: center;
+	font-size: 500%;
+	font-family: 'MuseoModerno', cursive;
+	color: white;
+}
+
+p, h2{
+	text-align: center;
+	font-size: 150%;
+	padding: 3% 20% 5% 20%;
+	line-height: 30px;
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	margin: 0;
+	border: solid 1px;
+}
+
+footer{
+	text-align: center;
+	padding: 3%
+}
+
+a{
+	text-decoration: none;
+}
+
+.footer-alt{
+	font-size: 200%;
+	font-family: 'MuseoModerno', cursive;
+}
+
+.proj-img{
+	height: 100%;
+	width: 100%;
+	
+}
+.proj-img:hover{
+	transform: scale(1.2, 1.2);
+	transition-duration: 500ms;
+	transition-timing-function: ease-out;
+	border: solid 2px white;
+	/* opacity: 0.7; */
+}
+.proj-card:hover{
+	border: solid 2px black;
+}
+
+.alt-h2{
+	border: 0px;
+	padding: 1% 0;
+}
+
+.card-p-container{
+	height: 200px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.w3-card-4{
+	border: 1px;
+	margin: 1%;
+	color: black;
+
+
+}
+
+.projects{
+	margin: 2%;
+}
+
+#projects{
+    background-image: radial-gradient(circle, #1979ee, #7d96f1, #b0b5f4, #d9d7f8, #fcfcfc);}
+
+      
+
+/* 
+font-family: 'MuseoModerno', cursive;
+font-family: 'Nunito', sans-serif; */
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'MuseoModerno', cursive;
+font-family: 'Nunito', sans-serif; */

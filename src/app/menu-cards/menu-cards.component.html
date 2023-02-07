@@ -1,0 +1,37 @@
+<div class="cards">
+    <div class="flip-card">
+      <p class="card-title">{{texts.cardHeader1}}</p>
+      <div class="flip-card-inner">
+        <div class="flip-card-front card-img card-img-curriculo">
+        </div>
+        <div style="background-color:#FFCC00;" class="flip-card-back">
+          <p>{{texts.cardBody1}}</p> 
+          <button (click)="goToPage('/curriculum')" class="btn">{{texts.cardBtn1}}</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flip-cardx">
+      <p class="card-title">{{texts.cardHeader2}}</p>
+      <div class="flip-card-innerx">
+        <div class="flip-card-frontx card-img card-img-certificados">
+        </div>
+        <div style="background-color:#288BE4;" class="flip-card-backx">
+          <p>{{texts.cardBody2}}</p> 
+          <button (click)="goToPage('/certificates')" class="btn">{{texts.cardBtn2}}</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flip-card">
+      <p class="card-title">{{texts.cardHeader3}}</p>
+      <div class="flip-card-inner">
+        <div class="flip-card-front card-img card-img-projetos">
+        </div>
+        <div style="background-color:#FFFFFF;" class="flip-card-back">
+          <p>{{texts.cardBody3}}</p> 
+          <button (click)="goToPage('/projects')" class="btn">{{texts.cardBtn3}}</button> 
+        </div>
+      </div>
+    </div>
+  </div>
