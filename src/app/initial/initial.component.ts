@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LanguageServiceService } from '../language-service.service';
+import { LanguageServiceService } from '../services/language-service.service';
 import { LoadServiceService } from '../services/load-service.service';
 
 @Component({
@@ -10,20 +10,15 @@ import { LoadServiceService } from '../services/load-service.service';
 })
 export class InitialComponent implements OnInit {
   constructor(
-    private router:Router, 
+    private loadService:LoadServiceService, 
     private serviceLang:LanguageServiceService, 
     ) { }
 
   ngOnInit(): void { }
 
-  setLangBr(){
-    this.serviceLang.setLang('BR');
-    this.router.navigateByUrl("/home");
-  }
-
-  setLangUs(){
-    this.serviceLang.setLang('US');
-    this.router.navigateByUrl("/home");
+  setLang(lang:string){
+    this.serviceLang.setLang(lang);
+    this.loadService.goToPage("/home");
   }
 
 }

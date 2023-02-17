@@ -8,13 +8,17 @@ import { LoadServiceService } from '../services/load-service.service';
   styleUrls: ['./loading.component.css']
 })
 export class LoadingComponent implements OnInit {
+  public loadScreen:number= 0;
 
   constructor(private loadService:LoadServiceService, private router:Router) { }
 
   ngOnInit(): void {
     let destiny:string= this.loadService.getDestiny();
     
-    let loadScreen= Math.floor(Math.random() * 3);
+    this.loadScreen= Math.floor(Math.random() * 3);
+    // this.loadScreen= 2;
+
+    console.log("destiny: " + destiny);
     
     setTimeout(()=>{
       this.router.navigateByUrl(destiny);

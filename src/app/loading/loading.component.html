@@ -1,5 +1,4 @@
-<!-- <ng-container *ngIf="loadScreen === 0">
-  <body>
+<ng-container *ngIf="loadScreen == 0">
     <div class="loader">
         <div class="face">
           <div class="circle"></div>
@@ -8,11 +7,9 @@
           <div class="circle"></div>
         </div>
       </div>
-  </body>
 </ng-container>
- -->
-
-<ng-container>
+ 
+<ng-container *ngIf="loadScreen == 1">
   <div class="middle">
     <div class="bar bar1"></div>
     <div class="bar bar2"></div>
@@ -23,6 +20,17 @@
     <div class="bar bar7"></div>
     <div class="bar bar8"></div>
   </div>
+</ng-container>
 
-
+<ng-container class="load3" *ngIf="loadScreen == 2">
+  <div class="wrapper">
+    <span class="circle-load3 circle-1"></span>
+    <span class="circle-load3 circle-2"></span>
+    <span class="circle-load3 circle-3"></span>
+    <span class="circle-load3 circle-4"></span>
+    <span class="circle-load3 circle-5"></span>
+    <span class="circle-load3 circle-6"></span>
+    <span class="circle-load3 circle-7"></span>
+    <span class="circle-load3 circle-8"></span>
+  </div>
 </ng-container>

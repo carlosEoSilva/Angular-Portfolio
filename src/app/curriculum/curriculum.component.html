@@ -1,4 +1,6 @@
 <div>
-    <button class="button-3" (click)="loadService.goToPage('/home')">Voltar</button>
-    <embed src="../../assets/curriculo.pdf" type="application/pdf">
+    <button class="button-3" (click)="loadService.goToPage('/home')">{{texts.btn1}}</button>
+    
+    <embed *ngIf="language == 'BR'" src= "../../assets/curriculo-br.pdf" type="application/pdf">
+    <embed *ngIf="language != 'BR'" src= "../../assets/curriculo-en.pdf" type="application/pdf">
 </div>

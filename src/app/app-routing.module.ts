@@ -8,6 +8,7 @@ import { LoadingComponent } from './loading/loading.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
+  {path:"initial", component: InitialComponent},
   {path:"home", component: HomeComponent},
   {path:"loading", component: LoadingComponent},
   {path:"curriculum", component: CurriculumComponent},

@@ -181,6 +181,12 @@ p{
   transform: scale(1.2);
 }
 
+.button-3{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
 /* 
 font-family: 'Balsamiq Sans', cursive;
 font-family: 'Lexend', sans-serif;
